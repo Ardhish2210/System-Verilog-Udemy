@@ -11,7 +11,7 @@ module tb;
   real duty_cycle = 0.6;    // Duty cycle (60%)
   real high_time, low_time;  /// high and low time
  
-// STart the code from here
+///////////User code for clock generation starts here 
   task get_high_low_times(input real period, input real duty_cycle, output real high_time, output real low_time);
     high_time = period * duty_cycle;   
     low_time = period * (1 - duty_cycle); 
@@ -27,10 +27,9 @@ module tb;
         clk = 0;
         #(low_time);
       end
-    
   end
-  
-  // User code ends here
+ 
+  ///////////User code ends here
   real generated_value;
   
   initial begin
