@@ -28,7 +28,7 @@ module tb;
         #(low_time);
       end
   end
- 
+
   ///////////User code ends here
   real generated_value;
   
